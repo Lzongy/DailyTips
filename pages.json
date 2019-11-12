@@ -1,0 +1,43 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "生活记录"
+			}
+		}
+        ,{
+            "path" : "pages/about/about",
+            "style" : {
+							"navigationBarTitleText":"开发者主页"
+						}
+        }
+    ],
+	"tabBar" :{
+					"color": "#000000",
+	        "selectedColor": "#2F85FC",
+	        "backgroundColor": "#FFFFFF",
+	        "borderStyle": "black",
+					"fontSize":"15px",
+	        "list": [
+	            {
+	                "pagePath": "pages/index/index",
+	                "iconPath": "static/write.png",
+									"selectedIconPath": "static/write.png",
+	                "text": "记录"
+	            },
+							{
+								"pagePath": "pages/about/about",
+								"iconPath": "static/programmer.png",
+								"selectedIconPath": "static/programmer.png",
+								"text": "开发者主页"
+							}
+						]
+	    },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
