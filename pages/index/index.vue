@@ -1,11 +1,20 @@
 <template>
 	<view>
 		<view>
-		<text class="tips"><image src="../../static/content_icon.png" style="width: 20px;height: 20px;align-items: center;"></image>想记录的内容：</text>
+		<view class="tips">
+			<image src="../../static/content_icon.png" style="width: 20px;height: 20px;align-items: center;"></image>
+		<text>想记录的内容：</text>
+		</view>
 		<textarea type="text" v-model="contents" value=""></textarea>
-		<text class="tips"><image src="../../static/title_icon.png" style="width: 20px;height: 20px;align-items: center;"></image>取个标题吧：</text>
+		<view class="tips">
+			<image src="../../static/title_icon.png" style="width: 20px;height: 20px;align-items: center;"></image>
+			<text>取个标题吧：</text>
+			</view>
 		<input type="text" v-model="title" value="">
-		<text class="tips"><image src="../../static/tip_icon.png" style="width: 20px;height: 20px;align-items: center;"></image>需要备注嘛：</text>
+		<view class="tips">
+			<image src="../../static/tip_icon.png" style="width: 20px;height: 20px;align-items: center;"></image>
+			<text>需要备注嘛：</text>
+			</view>
 		<input type="text" v-model="note" value="">
 			<button type="primary" @click="add(index)" :class="['add']">记录</button>
 			</view>
